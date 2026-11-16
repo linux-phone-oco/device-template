@@ -1,0 +1,17 @@
+# This repository's mark: how it fits the Open Commons Observatory's picture.
+schema = 1
+
+[project]
+id = "linux-phone-oco/device-template"
+name = "Device template: a new phone's lab is a new device.toml"
+title = "device template"
+kind = "device-lab"
+parent = "linux-phone-oco"
+
+[exports]
+backlog = "oco/backlog.json"
+milestones = "oco/milestones.json"
+session_log = "oco/session_log.json"
+glimpses = "oco/glimpses.json"
+decisions = "oco/decisions.json"
+problems = "oco/problems.json"

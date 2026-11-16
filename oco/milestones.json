@@ -1,0 +1,1 @@
+{"id":"dt-any-phone","subject":"device-template","ord":1,"title":"A new phone is a new device.toml","horizon":"working","readiness":5,"criteria":"backlog:dt-made backlog:dt-second-phone","why":"Support for another phone needs no copying of tools: the conveyor is shared, the phone is data."}
