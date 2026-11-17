@@ -15,6 +15,12 @@ addresses = ["172.16.42.1"]        # USB networking first (postmarketOS' default
 [provision]
 packages = "provision/packages.txt"   # installed on a freshly flashed phone: devlab provision now
 
+[fastboot]
+# The phone as fastboot knows it: every fastboot call devlab makes names this serial (a lab may hold two
+# phones in fastboot). devlab flash writes only where writes = true - say it only by a recorded decision.
+serial = ""                        # CHANGE: as `fastboot devices` lists it
+writes = false                     # devlab fastboot boot now BOOT.IMG boots from memory without writing
+
 [flash]
 # How an image goes onto this phone (devlab flash now IMAGE BOOTLOADER). The defaults suit an A-only
 # phone flashed over fastboot with the image on userdata; say what differs.
