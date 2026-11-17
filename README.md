@@ -35,5 +35,6 @@ A part the phone never had working is a `gap` - measured on every boot, but not 
 - `tests/health/` - this phone's own checks, if any, beside the generic ones (see its README).
 - `tests/results/` - every health report the phone wrote, as it wrote it (`devlab gather now`).
 - `provision/packages.txt` - what a freshly flashed phone gets.
-- `oco/` - this lab's backlog, decisions, milestones and log, shown in the
-  [Open Commons Observatory](https://open-commons-observatory.github.io/).
+- its backlog, decisions, milestones and log are kept in
+  [linux-phone-oco/docs](https://github.com/linux-phone-oco/docs), the project's one database (project =
+  `linux-phone-oco/device-template`), and shown on [its face](https://linux-phone-oco.github.io/docs/).
