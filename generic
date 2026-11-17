@@ -13,3 +13,6 @@ records/backlog-needs.sql
 records/test-run.sql
 queries/lane-next.sql
 queries/phone-stands.sql
+records/hardware.sql
+records/hardware-status.sql
+queries/hardware.sql

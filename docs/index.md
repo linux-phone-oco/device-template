@@ -5,6 +5,7 @@
 - [Backlog](backlog.md): 0
 - [Decisions](decisions.md): 0
 - [Devices](devices.md): 0
+- [Hardware](hardware.md): 0
 - [Parts](parts.md): 0
 - [Research](research.md): 0
 - [Session Log](session_log.md): 0
