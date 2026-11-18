@@ -40,6 +40,15 @@ with the `test-run` record. Keep the template's own `data/` empty: a new device 
 Every change lpoco lab makes ends with the phone's own health report: nobody has to remember to check.
 A part the phone never had working is a `gap` - measured on every boot, but not ill health.
 
+## Followed and made once
+
+Every file here is one of three kinds. **Followed**: laid by `bin/follow.sh` of ideal-knowledge-base, at the release a pin
+file names - the standing statements and tables from [grenudi/ideal-knowledge-base](https://github.com/grenudi/ideal-knowledge-base)
+(`idealkb.toml`), the device layer (the phone's statements and the `devices`, `parts`, `test_runs` and `test_results` tables) from
+[linux-phone-oco/docs](https://github.com/linux-phone-oco/docs) (`devicebase.toml`, folder `device-layer/` there). This template
+follows them like any device base; change a followed file at its source, not here. **Made once**: the seed listed in
+`made-once`, laid when a base is made from this template and then the base's own. **Data**: `data/` and `docs/`.
+
 ## What lives here
 
 - `device.toml` - the phone, as facts.
