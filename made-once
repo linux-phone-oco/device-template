@@ -1,0 +1,22 @@
+# What this template lays once, when a device base is made from it (Use this template), and the base then owns: its
+# seed. Every other file is followed - laid by bin/follow.sh from ideal-knowledge-base's generic list (idealkb.toml)
+# or from docs' (devicebase.toml, the device layer) - or is the base's data (data/, docs/). A file in no list is
+# unclassified: the drift check (docs research/device-template/2026-11-18/template-drift.sh) names it.
+.github/workflows/check.yml
+.github/workflows/gather.yml
+.github/workflows/tad.yml
+.gitignore
+.oco/uncommitted
+Makefile
+README.md
+bin/install-tad.sh
+device.toml
+devicebase.toml
+idealkb.toml
+made-once
+oco.toml
+provision/packages.txt
+tests/health/README.md
+tests/health/base/.gitkeep
+tests/health/shell/.gitkeep
+tests/results/.gitkeep
