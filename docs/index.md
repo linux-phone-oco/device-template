@@ -10,6 +10,7 @@
 - [Research](research.md): 0
 - [Session Log](session_log.md): 0
 - [Sources](sources.md): 0
+- [Steps](steps.md): 0
 - [Summaries](summaries.md): 0
 - [Test Results](test_results.md): 0
 - [Test Runs](test_runs.md): 0
