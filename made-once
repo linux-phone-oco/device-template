@@ -7,9 +7,15 @@
 .github/workflows/tad.yml
 .gitignore
 .oco/uncommitted
+LICENSE
+LICENSE-APACHE
+LICENSE-MIT
+LICENSES/CC-BY-SA-4.0.txt
 Makefile
 README.md
+REUSE.toml
 bin/install-tad.sh
+bin/licence-check
 device.toml
 devicebase.toml
 idealkb.toml

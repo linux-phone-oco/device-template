@@ -1,0 +1,26 @@
+# Who may use which file, and under what (REUSE: https://reuse.software/spec-3.3/#reusetoml), by path; later annotations win
+# where they overlap. Decision 2026-11-19-licences-for-our-repositories (linux-phone-oco/docs): a device base's data and
+# docs are CC-BY-SA-4.0 (LICENSE), its scripts, statements and configuration MIT OR Apache-2.0 (LICENSE-MIT,
+# LICENSE-APACHE), its device trees (and dts patches) GPL-2.0-only OR BSD-2-Clause, with SPDX headers - the template has
+# none. bin/licence-check (make verify, CI) keeps every new file covered: it is ideal-agent's scripts/licence-check,
+# copied as it is (grenudi/ideal-agent#101); it reads one `path = [...]` per line, and `*` for it crosses folders.
+#
+# CHANGE in a lab made from this template: review every licence line below (SPDX-License-Identifier) and the copyright
+# holder in the texts (LICENSE-MIT's first lines) - they are the template author's choice, yours may differ. A device tree
+# you add carries `// SPDX-License-Identifier: GPL-2.0-only OR BSD-2-Clause` and its texts go to LICENSES/ (SPDX
+# license-list-data text/ID.txt); name it in an annotation here, so the check holds the texts of what it names.
+version = 1
+
+# The data and the docs. CHANGE: review this licence line.
+[[annotations]]
+path = ["LICENSE", "README.md", "AGENTS.md", "data/**", "docs/**", "tests/results/**", "tests/health/README.md", "device.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 grenudi"
+SPDX-License-Identifier = "CC-BY-SA-4.0"
+
+# The scripts, statements and configuration. CHANGE: review this licence line.
+[[annotations]]
+path = [".github/**", "bin/**", "queries/**", "records/**", "tests/health/base/**", "tests/health/shell/**", "provision/**", "tables.toml", "Makefile", "devicebase.toml", "idealkb.toml", "oco.toml", "made-once", ".gitignore", ".oco/**", "REUSE.toml"]
+precedence = "aggregate"
+SPDX-FileCopyrightText = "2026 grenudi"
+SPDX-License-Identifier = "MIT OR Apache-2.0"
