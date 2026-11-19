@@ -58,3 +58,10 @@ follows them like any device base; change a followed file at its source, not her
 - its backlog, decisions, milestones and log are kept in
   [linux-phone-oco/docs](https://github.com/linux-phone-oco/docs), the project's one database (project =
   `linux-phone-oco/device-template`), and shown on [its face](https://linux-phone-oco.github.io/docs/).
+
+## Licence
+
+Data and docs: [CC-BY-SA-4.0](LICENSE). Scripts, statements and configuration: MIT OR Apache-2.0, at your option
+([`LICENSE-MIT`](LICENSE-MIT), [`LICENSE-APACHE`](LICENSE-APACHE)). A device tree or dts patch you add: GPL-2.0-only OR BSD-2-Clause,
+with an SPDX header. [`REUSE.toml`](REUSE.toml) says it per path, and `bin/licence-check` (`make verify`, CI) keeps new files
+covered. CHANGE in a lab made from this template: review these licences, the licence lines in `REUSE.toml` and the copyright holder in the texts.
