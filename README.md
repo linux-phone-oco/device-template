@@ -49,15 +49,26 @@ file names - the standing statements and tables from [grenudi/ideal-knowledge-ba
 follows them like any device base; change a followed file at its source, not here. **Made once**: the seed listed in
 `made-once`, laid when a base is made from this template and then the base's own. **Data**: `data/` and `docs/`.
 
-## What lives here
+## Map
 
-- `device.toml` - the phone, as facts.
-- `tests/health/` - this phone's own checks, if any, beside the generic ones (see its README).
-- `tests/results/` - every health report the phone wrote, as it wrote it (`lpoco lab gather now`).
-- `provision/packages.txt` - what a freshly flashed phone gets.
-- its backlog, decisions, milestones and log are kept in
-  [linux-phone-oco/docs](https://github.com/linux-phone-oco/docs), the project's one database (project =
-  `linux-phone-oco/device-template`), and shown on [its face](https://linux-phone-oco.github.io/docs/).
+A lab made from this template has these top-level folders; each has a README saying what belongs in it.
+Add a folder only with its README and a line here.
+
+| folder or file | what it is |
+|---|---|
+| `device.toml` | the phone, as facts |
+| `procedures/` | what a keeper runs on the phone, one whole try per file, as one command |
+| `kernel/` | `topics.toml`, the written list the phone's test kernel `int/CODENAME` is assembled from, and config fragments - never patches (they live on `topic/ITEM` branches of linux-phone-oco/linux) |
+| `tools/` | the lab's own programs, if any |
+| `provision/` | what a freshly flashed phone gets (`packages.txt`) |
+| `tests/` | checks by where they run: `ci/`, `host/` (the lab machine), `health/` (the phone); `results/`, the reports the phone wrote (`lpoco lab gather now`) |
+| `research/` | the material behind research rows, `research/ABOUT/DATE/` |
+| `data/`, `queries/`, `records/`, `tables.toml`, `idealkb.toml`, `devicebase.toml` | the base: its rows, named queries and records, schema and pins |
+| `docs/` | pages rendered from data/, for people |
+| `bin/` | the base's small install and check scripts |
+
+Never at the top: run logs, worktrees, copies of other repositories. The whole project's map:
+[linux-phone-oco/docs MAP.md](https://github.com/linux-phone-oco/docs/blob/main/MAP.md).
 
 ## Licence
 
