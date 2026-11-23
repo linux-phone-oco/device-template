@@ -13,7 +13,7 @@ version = 1
 
 # The data and the docs. CHANGE: review this licence line.
 [[annotations]]
-path = ["LICENSE", "README.md", "AGENTS.md", "data/**", "docs/**", "tests/results/**", "tests/health/README.md", "device.toml"]
+path = ["LICENSE", "README.md", "**/README.md", "AGENTS.md", "data/**", "docs/**", "tests/results/**", "tests/health/README.md", "device.toml"]
 precedence = "aggregate"
 SPDX-FileCopyrightText = "2026 grenudi"
 SPDX-License-Identifier = "CC-BY-SA-4.0"
